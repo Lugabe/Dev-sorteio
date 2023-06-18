@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.dado-img {
+    margin-top: 100px;
+    margin-bottom: 26px;
+    display: block;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 2px;
+    margin-bottom: 120px;
+    box-shadow: 0px 48px 45px rgba(250, 251, 249, 0.988);
+
+}
+
+.h5-sortear {
+    color: #09e414;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 10px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    width: 342px;
+    height: 74px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    opacity: 0.7;
+    color: #e7df0f;
+
+}
+
+.numero-de {
+    margin-right: 62px;
+}
+
+.button-sort {
+    background: #AEC346;
+    box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35);
+    border-radius: 10px;
+    width: 342px;
+    height: 72px;
+    margin-top: 79px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2px;
+    border: none;
+}
+
+.button-sort:hover {
+    opacity: 0.9;
+}
+.button-sort:active{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 450px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .numero-de {
+        margin-bottom: 10px;
+    }
+
+    .button-sort {
+        margin-right: 10px;
+
+    }
+}
