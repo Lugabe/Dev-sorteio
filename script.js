@@ -7,7 +7,13 @@ function sort() {
     const numeroAte = document.querySelector(".numero-ate").value;
 
     const valorSorteado = Math.ceil(Math.random() * (numeroAte - numeroDe + 1));
-    result.innerHTML = "O valor sortedo foi: " + "<b>" + valorSorteado + "</b>";
+
+    if (valorSorteado >= numeroDe) {
+        result.innerHTML = "O valor sortedo foi: " + "<b>" + valorSorteado + "</b>";
+    }
+    else {
+        sort();
+    }
 
 }
 
